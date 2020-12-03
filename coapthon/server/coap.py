@@ -23,9 +23,6 @@ import collections
 __author__ = 'Giacomo Tanganelli'
 
 
-if not os.path.isfile("logging.conf"):
-    create_logging()
-
 logger = logging.getLogger(__name__)
 logging.config.fileConfig("logging.conf", disable_existing_loggers=False)
 
